@@ -1,6 +1,11 @@
 # eclipse setting
 https://velog.io/@anisia20/Quarkus-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85
 
+# modify /etc/hosts
+```
+sudo echo "YourIP test.mysql.com" >> /etc/hosts
+```
+
 # need mysql8
 ```
 cd docker
