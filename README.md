@@ -3,7 +3,8 @@ https://velog.io/@anisia20/Quarkus-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EA%B0%9
 
 # modify /etc/hosts
 ```
-sudo echo "YourIP test.mysql.com" >> /etc/hosts
+sudo vi /etc/hosts
+YourIP test.mysql.com
 ```
 
 # need mysql8
@@ -23,5 +24,5 @@ brew install --cask adoptopenjdk11
 ```
 ./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
 docker build -f src/main/docker/Dockerfile.jvm -t example .
-docker run --name example -i -d --rm example
+docker run --name example -i -d -p 8080:8080 --rm example
 ```
