@@ -23,6 +23,6 @@ brew install --cask adoptopenjdk11
 # build native image
 ```
 ./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
-docker build -f src/main/docker/Dockerfile.jvm -t example .
+docker build -f src/main/docker/Dockerfile.native -t example .
 docker run --name example -i -d -p 8080:8080 --rm example
 ```
